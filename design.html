@@ -29,47 +29,34 @@
 
 <h1>Hey Explorer!<br/> What are you going to do today...</h1>
 
-style="width: 100%; height: 100%; color: #979797; font-size: 30px; font-family: Azeret Mono; font-weight: 400; word-wrap: break-word">
+<h1 class ="todo">To do list </h1>
 
-
-
-<h1>To do list </h1>
 <table>
-    <tr>
-        <th>Tasks</th>
-        <th>label</th>
-        <th>Status</th>
-    </tr>
-    <tr>
-        <td> <!-- create input box -->
-            <div id="todo-form">
-                <!--user input -->
-                <input
-                        type="text"
-                        class="input-item"
-                        name="input_box"
-                        id="input-box"
-                        placeholder="Add Task"
-                />
-                <!-- add button -->
-                <button id="input-button" onclick="addTask()">Add</button>
-            </div>
-        </td>
-        <td>Maria Anders</td>
-        <td>Germany</td>
+<tr> <!-- This is the categories label-->
+    <th>Tasks</th>
+    <th>Label</th>
+    <th>Status</th>
+</tr>
+    <tr class="todo-list"> <!-- This is an extra-->
+        <td>INSERT TASKS ...</td>
+        <td>CATEGORY</td>
+        <td>PENDING</td>
     </tr>
 
-    <tr>
-        <td> <h2>My Tasks</h2>
-            <ul id="list-items"
-                type ="checkbox"
-            ></ul>
-        </td>
-        <td>Francisco Chang</td>
-        <td>Mexico</td>
+    <tr class="todo-list"><!-- This is an extra row-->
+        <td>Task1</td>
+        <td> label 1</td>
+        <td> status 1</td>
     </tr>
 
+    <tr class="todo-list"><!-- This is an extra row-->
+        <td>Task 2</td>
+        <td> label 2</td>
+        <td> status 2</td>
+    </tr>
 </table>
+
+<h2>Notes ..</h2>
 
 <script src="script.js"></script> <!--Linking the js-->
 
