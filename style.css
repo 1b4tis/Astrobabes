@@ -1,13 +1,6 @@
-table,th,td{
-    border: 1px solid black;
-    font-size: 24px;
-    colour: blue;
-    width: 100%
-}
 body{
     font-family: "Jaro", serif;
-
-    background-color: powderblue;
+    background-color: #FAFAFA;
     border-collapse: collapse;
 }
 
@@ -42,5 +35,27 @@ header{
     font-weight: bold;
     text-decoration: underline;
 
+}
+
+.todo{
+    text-align: center;
+}
+
+
+table {
+    border-collapse: collapse;
+    font-size: 24px;
+    width: 100%
+}
+tr{  /* Rows in the table */
+    text-align: left;
+}
+.todo-list:hover {
+    background-color: #6e6b6b;
+    opacity: 13%;
+}
+
+th, td {
+    border-bottom: 3px solid #6e6b6b;
 }
 
