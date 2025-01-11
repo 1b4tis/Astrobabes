@@ -1,0 +1,46 @@
+table,th,td{
+    border: 1px solid black;
+    font-size: 24px;
+    colour: blue;
+    width: 100%
+}
+body{
+    font-family: "Jaro", serif;
+
+    background-color: powderblue;
+    border-collapse: collapse;
+}
+
+
+
+
+
+
+/* ---------Navigation bar styles  ---------  */
+header{
+    display: flex; /* Use flexbox for alignment , make the list stay horizantal */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #212D61;
+    color: #EAF1F2
+}
+.navbar li{
+    display: inline-block; /*Makes the lust horizantal */
+    list-style-type: none; /* Removes dots in the list */
+    padding: 0px 20px; /*0 at the top and 20 left and right*/
+
+}
+.navbar li a {
+    transition: all 0.3s ease 0s;
+    color: #FAFAFA;
+    text-decoration: none; /* Removes underlines */
+}
+.navbar a:hover {
+    /* background-color: black;  Changes background color on hover */
+    color: #f1f1f1;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
