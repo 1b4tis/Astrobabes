@@ -22,7 +22,7 @@ header{
     display: inline-block; /*Makes the lust horizantal */
     list-style-type: none; /* Removes dots in the list */
     padding: 0px 20px; /*0 at the top and 20 left and right*/
-
+    font-family: "Century Gothic", "Geneva", "AppleGothic", sans-serif;
 }
 .navbar li a {
     transition: all 0.3s ease 0s;
@@ -37,13 +37,21 @@ header{
 
 }
 
+.header_title {
+    font-family: 'Space Theme', sans-serif;
+}
+.message {
+    font-family: 'New X Digital tfb', sans-serif;
+}
 .todo{
     text-align: center;
+    font-family: "Century Gothic", "Geneva", "AppleGothic", sans-serif;
 }
 
 
 table {
     border-collapse: collapse;
+    font-family: "Century Gothic", "Geneva", "AppleGothic", sans-serif;
     font-size: 24px;
     width: 100%
 }
@@ -57,5 +65,9 @@ tr{  /* Rows in the table */
 
 th, td {
     border-bottom: 3px solid #6e6b6b;
+}
+
+.notes{
+    font-family: "Century Gothic", "Geneva", "AppleGothic", sans-serif;
 }
 
