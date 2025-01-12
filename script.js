@@ -1,40 +1,81 @@
-const inputBox = document.getElementById("input-box");
-const listContainer = document.getElementById("list-items");
+const input = document.getElementById("taskText");
+const noItemsAlert = document.getElementById("alert");
+const listContainer = document.getElementById("task-items");
+const todo = [];
 
-function addTask() {
-    const task = inputBox.value.trim();
-    if (!task) { // If blank input, then show alert
-        alert("Please write down a task");
+// On page load
+document.addEventListener("DOMContentLoaded", () => {
+    todo.forEach((taskItem) => {
+        addTask(taskItem);
+    });
+});
+
+function createTask() {
+    const task = input.value.trim();
+    const categorySelect = document.getElementById("taskCategory"); // Fixed id
+    const category = categorySelect.value; // Assign selected category
+
+    // Validate input and category
+    if (task === "") {
+        alertMessage("Please write down a task");
+        return;
+    }
+    if (category === "") {
+        alertMessage("Please select a category");
         return;
     }
 
-    // Create a new list item element
+    // Check for duplicate tasks
+    if (todo.some((taskItem) => taskItem.text === task)) {
+        alertMessage("This task is already in the list");
+        return;
+    }
+
+    // Create and store the task
+    const listTask = { text: task, category: category, completed: false };
+    todo.push(listTask);
+    addTask(listTask);
+    alertMessage("Task added!");
+    input.value = ""; // Clear input field
+
+}
+
+function addTask(taskItem) {
+
+
     const listItem = document.createElement("li");
 
-    // Create a checkbox input
+    // Create checkbox
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
+    checkbox.checked = taskItem.completed;
 
-    // Create a span to hold the task text
+    // Create task text
     const taskText = document.createElement("span");
-    taskText.textContent = task;
+    taskText.textContent = `${taskItem.text} [${taskItem.category}]`; // Fixed template literal
 
-    // Create a delete button
+    // Create delete button
     const deleteButton = document.createElement("button");
+    deleteButton.className = "delete-button";
     deleteButton.textContent = "Delete";
-    deleteButton.style.marginLeft = "10px"; // Optional: Add some spacing
     deleteButton.onclick = () => {
         listContainer.removeChild(listItem);
+        const index = todo.findIndex((t) => t.text === taskItem.text);
+        if (index > -1) {
+            todo.splice(index, 1);
+        }
     };
 
-    // Append the checkbox, task text, and delete button to the list item
+    // Append elements to list item
     listItem.appendChild(checkbox);
     listItem.appendChild(taskText);
     listItem.appendChild(deleteButton);
 
-    // Append the list item to the list container
+    // Add list item to the container
     listContainer.appendChild(listItem);
+}
 
-    // Clear the input box for the next task
-    inputBox.value = "";
+function alertMessage(message) {
+    noItemsAlert.innerText = message;
+    setTimeout(() => { noItemsAlert.innerText = ""; }, 2500);
 }
