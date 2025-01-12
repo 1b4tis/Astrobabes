@@ -17,7 +17,7 @@ img:hover {
     transform: rotate(25deg); /*Rotate*/
     transition: transform 0.3s ease; /*tansition in the rotation*/
 }
-/* .navbar li{
+ .navbar li{
     display: inline-block; /*Makes the list horizantal */
     list-style-type: none; /* Removes dots in the list */
     padding: 0px 20px; /*0 at the top and 20 left and right*/
