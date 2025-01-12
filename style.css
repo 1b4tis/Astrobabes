@@ -4,17 +4,14 @@ body{
     border-collapse: collapse;
     margin:0; /*-- removes the  extra space in the border colour */
 }
-
 /* ---------Navigation bar styles  ---------  */
 header{
     display: flex; /* Use flexbox for alignment , make the list stay horizantal */
     justify-content: space-between;
     align-items: center;
     padding: 1% ;
-
     background-color: #212D61;
     color: #EAF1F2;
-
 }
 img:hover {
     transform: rotate(25deg); /*Rotate*/
@@ -33,45 +30,36 @@ img:hover {
     transform: rotate(45deg); /*Rotate*/
     transition: transform 0.3s ease; /*tansition in the rotation*/
 } */
-
 .header_title {
     font-family: 'Space Theme', sans-serif;
 }
-
 .container{
     padding: 30px; /* so that there is space  */
     padding: 90px;
 }
-
 .message {
     font-family: 'New X Digital tfb', sans-serif;
     font-size: 24px;
     color: #212D61;
     text-align: center;
 }
-
  /*.todo_Title{
     text-align: center;
     font-family: "Century Gothic", "Geneva", "AppleGothic", sans-serif;
 }
   */
-
 .tasklist-body{
     align-items: center;
     display: flex; /** center the stuff*/
 }
-
 .task-category { /**Selection option*/
     font-size: 24px;
     background-color: #FAFAFA;
     appearance: none;
-    border: 0px solid #caced1;
+    border: 0px solid #CACED1;
     padding-left: 20px;
     color: #868688;
-
 }
-
-
 .tasklist-body input{ /**input text**/
     font-size: 35px ;
     text-align: center;
@@ -80,7 +68,6 @@ img:hover {
     flex: 1;
     background-color: #FAFAFA;
 }
-
 .tasklist-body img{ /*make the image be surronded by a circle */
     cursor: pointer ;
     border-radius:30px ;
@@ -95,7 +82,6 @@ p{
     font-size: 24px;
     color: #212D61;
     text-align: center;
-
 }
 ul li{
     list-style-type: none; /**remove the dot  */
@@ -104,57 +90,41 @@ ul li{
     padding: 20px;
     font-family: Arial;
     colour: #EAF1F2;
-
 }
-
 .task-items li{
-
     align-items: center;
     display: flex;
     list-style: none;
     background-color: #212D61;
     margin-bottom: 10px;
     border-radius: 5px;
-
     colour: #EAF1F2;
 }
-
 input[type ="checkbox"]{ /** chancge the style for checkbox*/
     transform: scale(2.5);
     margin-right:15px ; /** ads space between the values */
 }
-
 .task-items span {/* adds space btwen the text */
     flex-grow: 0.5; /*  */
 }
-
-
 .delete-button{
     transform: scale(2.5);
     background : #EAF1F2;
     margin-left:15px ; /** ads space between the values */
     border: none;
-
 }
 .delete-button:hover{
     color: #C32F27;
     font-weight: bold ;
 }
-
-
-
-
 .notes{
     font-family: 'New X Digital tfb', sans-serif;
     color: #212D61;
    /* font-family: "Century Gothic", "Geneva", "AppleGothic", sans-serif;
-
     */
 }
-
 h2{
     font-size: 24px;
     font-family: Arial;
     color: #212D61;
 }
-
