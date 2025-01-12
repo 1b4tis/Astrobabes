@@ -29,7 +29,7 @@ img:hover {
 .navbar li:hover {
     transform: rotate(45deg); /*Rotate*/
     transition: transform 0.3s ease; /*tansition in the rotation*/
-} */
+} 
 .header_title {
     font-family: 'Space Theme', sans-serif;
 }
