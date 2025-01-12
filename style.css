@@ -16,7 +16,11 @@ header{
     color: #EAF1F2;
 
 }
-.navbar li{
+img:hover {
+    transform: rotate(25deg); /*Rotate*/
+    transition: transform 0.3s ease; /*tansition in the rotation*/
+}
+/* .navbar li{
     display: inline-block; /*Makes the list horizantal */
     list-style-type: none; /* Removes dots in the list */
     padding: 0px 20px; /*0 at the top and 20 left and right*/
@@ -28,7 +32,7 @@ header{
 .navbar li:hover {
     transform: rotate(45deg); /*Rotate*/
     transition: transform 0.3s ease; /*tansition in the rotation*/
-}
+} */
 
 .header_title {
     font-family: 'Space Theme', sans-serif;
